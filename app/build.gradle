@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.example.retrofit"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 2
+        versionName "2.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.3'
+    compile 'com.daimajia.numberprogressbar:library:1.2@aar'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.jude:easyrecyclerview:4.2.6'
+    compile project(':rxretrofitlibrary')
+    compile 'com.android.support:recyclerview-v7:25.1.0'
+}
