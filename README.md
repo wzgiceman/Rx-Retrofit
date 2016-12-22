@@ -62,6 +62,7 @@ public class SubjectPostApi extends BaseApi {
 
     @Override
     public Observable getObservable(Retrofit retrofit) {
+        //可定义多个ApiService接口类，随意切换
         HttpTestService httpService = retrofit.create(HttpTestService.class);
         return httpService.getAllVedioBy(all);
     }
