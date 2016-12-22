@@ -70,7 +70,15 @@ public class SubjectPostApi extends BaseApi {
 }
 ```
 
-###4.回调处理
+
+###4.发送请求
+
+```java
+ manager.doHttpDeal(xxxApi);
+```
+
+
+###5.回调处理
 HttpOnNextSubListener接口类抽象了两个回调方法
 ```java
     /**
