@@ -4,7 +4,7 @@
 
 ##依赖
 
-更目录下`build.gradle`添加仓地址
+根目录下`build.gradle`添加仓地址
 
 ```java
 	maven { url 'https://jitpack.io' }
