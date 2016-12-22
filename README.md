@@ -91,8 +91,10 @@ HttpOnNextSubListener接口类抽象了两个回调方法
 
 ***
 
-[更多用法可以参考MainActivity](https://github.com/wzgiceman/Rx-Retrofit/blob/master/app/src/main/java/com/example/retrofit/activity/MainActivity.java)
+[更多用法可以参考MainActivity](https://github.com/wzgiceman/Rx-Retrofit/blob/master/app/src/main/java/com/example/retrofit/activity
+/MainActivity.java)
 
+完整使用请查看demo
 ***
 ##其他版本
 
