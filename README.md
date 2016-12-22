@@ -13,7 +13,7 @@
 依赖库
 
 ```java
-	compile 'com.github.wzgiceman:Rx-Retrofit:-SNAPSHOT'
+	compile 'com.github.wzgiceman:Rx-Retrofit:v1.0'
 ```
 
 ##使用
