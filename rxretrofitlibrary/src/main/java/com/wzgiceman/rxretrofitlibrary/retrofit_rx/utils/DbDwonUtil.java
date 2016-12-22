@@ -73,6 +73,19 @@ public class DbDwonUtil {
     }
 
 
+    /**
+     * 保存或者更新
+     * @param info
+     */
+    public void saveOrUpdate(DownInfo info){
+        DownInfo downInfo=queryDownBy(info.getId());
+        if(downInfo==null){
+            save(info);
+        }else{
+            update(info);
+        }
+    }
+
     public void save(DownInfo info){
         DaoMaster daoMaster = new DaoMaster(getWritableDatabase());
         DaoSession daoSession = daoMaster.newSession();
