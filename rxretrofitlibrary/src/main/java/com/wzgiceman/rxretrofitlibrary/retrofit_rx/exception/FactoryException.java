@@ -1,13 +1,11 @@
 package com.wzgiceman.rxretrofitlibrary.retrofit_rx.exception;
 
-import com.alibaba.fastjson.JSONException;
-import com.alibaba.fastjson.JSONPathException;
 
+import org.json.JSONException;
 import java.net.ConnectException;
 import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 import java.text.ParseException;
-
 import retrofit2.adapter.rxjava.HttpException;
 
 /**
@@ -43,8 +41,8 @@ public class FactoryException {
              /*链接异常*/
             apiException.setCode(CodeException.HTTP_ERROR);
             apiException.setDisplayMessage(ConnectException_MSG);
-        } else if (e instanceof JSONPathException || e instanceof JSONException || e instanceof ParseException) {
-             /*fastjson解析异常*/
+        } else if ( e instanceof JSONException || e instanceof ParseException) {
+             /*json解析异常*/
             apiException.setCode(CodeException.JSON_ERROR);
             apiException.setDisplayMessage(JSONException_MSG);
         }else if (e instanceof UnknownHostException){
