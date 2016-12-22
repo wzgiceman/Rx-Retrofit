@@ -1,23 +1,19 @@
 #Rx-Retrofit极简方式使用
 
-为了方便快速集成，这里去掉回调base统一处理，结果自返回服务器原始数据，在回调`onNext`中自行挑选gson解析第三方包处理
+为了方便快速集成，这里去掉回调base统一处理，结果自返回服务器原始数据，在回调`onNext`中自行挑选`gson`解析第三方包处理
 
 ##依赖
 
 更目录下`build.gradle`添加仓地址
 
 ```java
-
 	maven { url 'https://jitpack.io' }
-
 ```
 
 依赖库
 
 ```java
-	dependencies {
-	        compile 'com.github.wzgiceman:Rx-Retrofit:-SNAPSHOT'
-	}
+	compile 'com.github.wzgiceman:Rx-Retrofit:-SNAPSHOT'
 ```
 
 ##使用
@@ -97,7 +93,7 @@ HttpOnNextSubListener接口类抽象了两个回调方法
 
 [更多用法可以参考MainActivity](https://github.com/wzgiceman/Rx-Retrofit/blob/master/app/src/main/java/com/example/retrofit/activity/MainActivity.java)
 
-
+***
 ##其他版本
 
 
