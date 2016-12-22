@@ -34,7 +34,7 @@ public class MyApplication extends Application{
 ###2.初始化`HttpManager`对象
 
 ```java
-//传递数据回调接口``和RxAppCompatActivity对象
+//传递数据回调接口`HttpOnNextListener`和RxAppCompatActivity对象
 HttpManager x=new HttpManager(this, this);
 ```
 
